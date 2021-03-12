@@ -41,12 +41,17 @@ Baltimore2$year <- as.factor(Baltimore2$year)
 
 # create the plot 
 plot3 <- ggplot(Baltimore2, aes(x = year, y = Emissions)) + 
-  geom_bar(stat = "identity") +
+  geom_bar(stat = "identity", fill = "#E69F00") +
   facet_grid(. ~type) + 
   labs(x = "Year", y = "PM2.5 Emissions (tons)") +
   ggtitle("PM2.5 Emissions in Baltimore by Type") +
   theme(axis.text.x = element_text(angle = 45), 
         panel.background = element_rect(fill = "white"),
-        plot.title = element_text(hjust = 0.5))
+        plot.title = element_text(hjust = 0.5), 
+        axis.ticks = element_blank())
+
 
 plot3
+
+# save plot image to file
+ggsave("plot3.png")
