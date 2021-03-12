@@ -46,7 +46,7 @@ BaltLA$fips <- factor(BaltLA$fips,
 plot6 <- ggplot(BaltLA, aes(x = year, y = Emissions, fill = fips)) +
   geom_bar(stat = "identity", position = "dodge") + 
   labs(x = "Year", y = "PM2.5 Emissions (tons)") +
-  ggtitle("PM2.5 Emissions in from Motor Vehicles in \n Baltimore City and Los Angeles County") +
+  ggtitle("PM2.5 Emissions from Motor Vehicles in \n Baltimore City and Los Angeles County") +
   theme(axis.text.x = element_text(), 
         panel.background = element_rect(fill = "white"),
         plot.title = element_text(hjust = 0.5), 
