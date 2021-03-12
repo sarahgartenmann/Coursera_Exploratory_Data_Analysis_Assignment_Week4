@@ -42,7 +42,7 @@ Baltimore5$year <- as.factor(Baltimore5$year)
 plot5 <- ggplot(Baltimore5, aes(x = year, y = Emissions)) +
   geom_bar(stat = "identity", fill = "#E69F00") + 
   labs(x = "Year", y = "PM2.5 Emissions (tons)") +
-  ggtitle("PM2.5 Emissions in from Motor Vehicles in Baltimore City") +
+  ggtitle("PM2.5 Emissions from Motor Vehicles in Baltimore City") +
   theme(axis.text.x = element_text(), 
         panel.background = element_rect(fill = "white"),
         plot.title = element_text(hjust = 0.5), 
