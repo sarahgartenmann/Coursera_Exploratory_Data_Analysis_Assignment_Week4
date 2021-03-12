@@ -45,7 +45,7 @@ year_coal$year <- as.factor(year_coal$year)
 plot4 <- ggplot(year_coal, aes(x = year, y = Emissions)) +
   geom_bar(stat = "identity", fill = "#FF6666") + 
   labs(x = "Year", y = "PM2.5 Emissions (tons)") +
-  ggtitle("PM2.5 Emissions in from Coal Sources in the United States") +
+  ggtitle("PM2.5 Emissions from Coal Sources in the United States") +
   theme(axis.text.x = element_text(), 
         panel.background = element_rect(fill = "white"),
         plot.title = element_text(hjust = 0.5), 
